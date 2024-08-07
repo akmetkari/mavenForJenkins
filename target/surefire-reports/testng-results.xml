@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-01T22:49:34 IST" name="mavenForJenkins.UITest" finished-at="2024-08-01T22:49:47 IST" duration-ms="12174">
+    <groups>
+    </groups>
+    <test started-at="2024-08-01T22:49:34 IST" name="Command line test" finished-at="2024-08-01T22:49:47 IST" duration-ms="12174">
+      <class name="mavenForJenkins.UITest">
+        <test-method signature="uiSampleTest()[pri:0, instance:mavenForJenkins.UITest@75f9eccc]" started-at="2024-08-01T22:49:34 IST" name="uiSampleTest" finished-at="2024-08-01T22:49:47 IST" duration-ms="12095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiSampleTest -->
+      </class> <!-- mavenForJenkins.UITest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- mavenForJenkins.UITest -->
+</testng-results>
