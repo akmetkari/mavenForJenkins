@@ -1,19 +1,32 @@
 package mavenForJenkins;
 
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class UITest {
 
+	WebDriver driver;
+	@Parameters("Browser")
+	
 	@Test
-	public void uiSampleTest()
+	public void uiSampleTest(String BrowserName)
 	{
-		WebDriver driver = new EdgeDriver();
 		
+		System.out.println("Parameter value is "+BrowserName);
+		if (BrowserName.equalsIgnoreCase("Edge"))
+		{
+			driver = new EdgeDriver();
+		}
+		else 
+		{
+			driver = new ChromeDriver();
+		}
 		
 		driver.get("https://google.com");
 		driver.manage().window().maximize();
